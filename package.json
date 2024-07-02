@@ -1,0 +1,22 @@
+{
+  "name": "starter-project-eleventy",
+  "version": "1.0.0",
+  "description": "Curso de eleventy con Chonmircha el mejor profesor ",
+  "main": "eleventy.js",
+  "scripts": {
+    "install": "npm install @11ty/eleventy --save-dev",
+    "start": "npx @11ty/eleventy --serve --port=7777",
+    "clear": "rm -rf docs",
+    "deploy": "npx @11ty/eleventy --pathprefix=/",
+    "deploy-subdomain": "npx @11ty/eleventy --pathprefix=/starter-project-eleventy/"
+  },
+  "keywords": [
+    "programador",
+    "eleventy"
+  ],
+  "author": "duanly vega alderete",
+  "license": "MIT",
+  "dependencies": {
+    "@11ty/eleventy": "^2.0.1"
+  }
+}

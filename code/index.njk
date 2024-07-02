@@ -1,0 +1,25 @@
+---
+layout: base.njk
+title: Bienvenidos a mi Web 
+description: Meta description de la pagina de inicio
+---
+
+<h1>{{ title }}</h1>
+<section id="inicio">
+  <p>¡Bienvenido a mi sitio web! Aquí encontrarás una mezcla vibrante de creatividad y tecnología, donde exploro las últimas tendencias en desarrollo web. Desde tutoriales detallados hasta proyectos innovadores, mi objetivo es compartir conocimientos y ayudarte a llevar tus habilidades al siguiente nivel. Sumérgete en el mundo del desarrollo web con 11ty y descubre cómo crear sitios rápidos, seguros y accesibles. ¡Acompáñame en esta emocionante aventura digital!</p>
+  <div class="images">
+    <img src="/img/eleventy.svg" alt="Eleventy">
+    <h2>+</h2>
+    <img src="/img/github.svg" alt="GitHub">
+  </div>
+  <hr>
+  <h2>{{ site.message }}</h2>
+  <p>Para sacarle mayor provecho a este <i>starter project</i>, te sugiero revisar los siguientes enlaces:</p>
+  <ul>
+    {% for link in site.linksDoc %}
+      <li>
+        <a href="{{ link.url }}" target="_blank">{{ link.text | safe }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+</section>
