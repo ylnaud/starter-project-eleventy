@@ -17,6 +17,8 @@
   "author": "duanly vega alderete",
   "license": "MIT",
   "dependencies": {
-    "@11ty/eleventy": "^2.0.1"
+    "@11ty/eleventy": "^2.0.1",
+    "clean-css": "^5.3.3",
+    "terser": "^5.31.1"
   }
 }

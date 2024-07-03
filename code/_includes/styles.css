@@ -1,3 +1,5 @@
+/*no conflictivo*/
+
 :root {
   --border-color: red;
   --link-color: #1873a5;
@@ -34,18 +36,9 @@ h2 {
   margin: 0;
 }
 
-h2 {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-}
-
 a {
   color: var(--link-color);
   transition: all 0.3s ease-out;
-}
-
-a:hover {
-  color: var(--link-hover-color);
 }
 
 .menu {
@@ -81,6 +74,8 @@ footer {
 footer p {
   margin: 0;
 }
+
+/* conflictivo*/
 
 /* Estilos para la sección 'acerca' */
 #acerca {
@@ -141,4 +136,13 @@ ul {
 ul li {
   list-style-type: disc;
   margin-bottom: 0.5rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+a:hover {
+  color: var(--link-hover-color);
 }

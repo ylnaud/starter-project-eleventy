@@ -1,25 +1,42 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Una periodista intrépida y curiosa que no se detiene ante nada para descubrir la verdad. Laura es la líder del grupo y tiene un pasado oscuro">
-  <title>La Noche del Alma Perdida</title>
-  <link rel="icon" href="/starter-project-eleventy/img/favicon.png">
-   <link rel="stylesheet" href="/starter-project-eleventy/css/styles.css">
-</head>
-<body>
-  <main>
-    <header>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Una periodista intrépida y curiosa que no se detiene ante nada para descubrir la verdad. Laura es la líder del grupo y tiene un pasado oscuro">
+    <title>La Noche del Alma Perdida</title>
+    <link rel="icon" href="/starter-project-eleventy/img/favicon.png"> 
+    <!-- feed it through our cssmin filter to minify -->
+    <style>
+      :root{--border-color:red;--link-color:#1873a5;--link-hover-color:red;--max-content-width:800px;--max-menu-width:480px;--section-padding:2rem}*{box-sizing:border-box}body{margin:0 auto;padding:1rem;max-width:var(--max-content-width);min-height:100vh;text-align:center;font-family:system-ui,sans-serif}main{border:medium solid var(--border-color);padding:1rem}header{margin-bottom:2rem}h1,h2{margin:0}a{color:var(--link-color);transition:all .3s ease-out}.menu{width:100%;max-width:var(--max-menu-width);margin:0 auto 2rem;border:thin solid var(--border-color);padding:1rem}.menu ul{margin:0;padding:0;display:flex;justify-content:space-between;align-content:center;list-style:none}.menu li{list-style:none}img{display:block;margin:1rem auto}footer{margin-top:2rem}footer p{margin:0}#acerca{padding:var(--section-padding);text-align:left}#acerca p{font-size:1rem;line-height:1.5;margin-bottom:1rem}#acerca img{display:block;margin:0 auto;max-width:100%;height:auto;border:thin solid var(--border-color)}#inicio{padding:var(--section-padding);text-align:left}#inicio p{font-size:1rem;line-height:1.5;margin-bottom:1rem}#inicio .images{display:flex;align-items:center;justify-content:center;gap:1rem}#inicio .images img{max-width:100px;height:auto}#inicio .images h2{margin:0}hr{margin:2rem 0}ul{padding-left:20px}ul li{list-style-type:disc;margin-bottom:.5rem}h2{font-size:1.5rem;margin-bottom:1rem}a:hover{color:var(--link-hover-color)}</style>
+  </head>
+  <body>
+    <main>
+       <header>
      <a href="/starter-project-eleventy/"><h2>Mi Sitio Con <i>11ty</i></h2></a>
        <nav class="menu">
-  <li><a href="/starter-project-eleventy/acerca">Acerca</a></li>
-  <li><a href="/starter-project-eleventy/blog">Blog</a></li>
-  <li><a href="/starter-project-eleventy/contacto">Contacto</a></li>
+  
+  <ul>
+      <li><a href="/starter-project-eleventy/acerca">Acerca</a></li>
+
+  </ul>
+    
+  <ul>
+      <li><a href="/starter-project-eleventy/blog">Blog</a></li>
+
+  </ul>
+    
+  <ul>
+      <li><a href="/starter-project-eleventy/contacto">Contacto</a></li>
+
+  </ul>
+    
+  
+
  </nav>
       <img src="/starter-project-eleventy/img/eleventy.avif" alt="Mascrota 11ty">
  </header>
-   <h1><strong>La Noche del Alma Perdida</strong></h1>
+      <h1><strong>La Noche del Alma Perdida</strong></h1>
 <h2>Sinopsis</h2>
 <p>En un pequeño pueblo olvidado por el tiempo, algo siniestro se despierta cada noche. La &quot;Noche del Alma Perdida&quot; es una antigua leyenda que aterroriza a los habitantes, pero para algunos, es más que solo un cuento. Cuando un grupo de amigos decide investigar los misteriosos eventos que rodean la desaparición de varias personas, descubren que hay verdades que es mejor no desenterrar. A medida que la oscuridad se cierne sobre ellos, deben enfrentarse a sus peores miedos y luchar por sus vidas contra una fuerza malévola que no conoce piedad.</p>
 <h2>Personajes Principales</h2>
@@ -47,59 +64,62 @@
 <p>&quot;La Noche del Alma Perdida&quot; es una historia que te mantendrá al borde de tu asiento, explorando los rincones más oscuros del miedo humano y la fuerza de la amistad frente al terror.
 <img src="/starter-project-eleventy/img/eleventy.svg" alt="Evenlenty"></p>
 
-  </main>
-   <aside>
-    <h2>Categorías</h2>
-    <h3>Libros</h3>
-    <ul>
-      
-        <li>
-          <a href="/starter-project-eleventy/libro-1/">
-            La Noche del Alma Perdida
-          </a>
-        </li>
-      
-        <li>
-          <a href="/starter-project-eleventy/libro-3/">
-            El Espejo Maldito
-          </a>
-        </li>
-      
-        <li>
-          <a href="/starter-project-eleventy/libro-2/">
-            El Susurro del Bosque
-          </a>
-        </li>
-      
-    </ul>
-    <h3>Películas</h3>
-    <ul>
-      
-        <li>
-          <a href="/starter-project-eleventy/pelicula-3/">
-            Caos en la Oficina
-          </a>
-        </li>
-      
-        <li>
-          <a href="/starter-project-eleventy/pelicula-2/">
-            Caos en la Oficina
-          </a>
-        </li>
-      
-        <li>
-          <a href="/starter-project-eleventy/pelicula-1/">
-            Risas a Medianoche
-          </a>
-        </li>
-      
-    </ul>
-  </aside>
+    </main>
+    <aside>
+      <h2>Categorías</h2>
+      <h3>Libros</h3>
+      <ul>
+        
+          <li>
+            <a href="/starter-project-eleventy/libro-1/">
+              La Noche del Alma Perdida
+            </a>
+          </li>
+        
+          <li>
+            <a href="/starter-project-eleventy/libro-3/">
+              El Espejo Maldito
+            </a>
+          </li>
+        
+          <li>
+            <a href="/starter-project-eleventy/libro-2/">
+              El Susurro del Bosque
+            </a>
+          </li>
+        
+      </ul>
+      <h3>Películas</h3>
+      <ul>
+        
+          <li>
+            <a href="/starter-project-eleventy/pelicula-3/">
+              Caos en la Oficina
+            </a>
+          </li>
+        
+          <li>
+            <a href="/starter-project-eleventy/pelicula-2/">
+              Caos en la Oficina
+            </a>
+          </li>
+        
+          <li>
+            <a href="/starter-project-eleventy/pelicula-1/">
+              Risas a Medianoche
+            </a>
+          </li>
+        
+      </ul>
+    </aside>
      <footer>
   
-    🎈🦡<p>&copy; 2024 <small>Mi Sitio Hecho con  <a href="https://www.11ty.dev/" target="_blank"><b><i>11ty</i></b></a></small></p>🦡🎈
+    🎈🦡<p>&copy; 2024 <small>Mi Sitio Hecho con  <a href="https://www.11ty.dev/" target="_blank"><b><i>11ty</i></b></a> <a href="https://ylnaud.github.io/starter-project-eleventy/./code/libro-1.md"></a></small></p>🦡🎈
  </footer>
-    <script src="/starter-project-eleventy/js/index.js" type="module"></script>
-</body>
+    <!-- capture the JS content as a Nunjucks variable -->
+    
+    <!-- feed it through our jsmin filter to minify -->
+    <script>
+      document.addEventListener("DOMContentLoaded",(function(){console.log("dev")}));</script>
+  </body>
 </html>
-

@@ -1,43 +1,52 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="{{description}}">
-  <title>{{ title }}</title>
-  <link rel="icon" href="/img/favicon.png">
-   <link rel="stylesheet" href="/css/styles.css">
-</head>
-<body>
-  <main>
-   {% include 'header.njk' %}
-   {{  content | safe }}
-  </main>
-   <aside>
-    <h2>Categorías</h2>
-    <h3>Libros</h3>
-    <ul>
-      {% for article in collections.libros %}
-        <li>
-          <a href="{{article.url}}">
-            {{ article.data.title }}
-          </a>
-        </li>
-      {% endfor %}
-    </ul>
-    <h3>Películas</h3>
-    <ul>
-      {% for article in collections.peliculas %}
-        <li>
-          <a href="{{article.url}}">
-            {{ article.data.title }}
-          </a>
-        </li>
-      {% endfor %}
-    </ul>
-  </aside>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{{ description }}">
+    <title>{{ title }}</title>
+    <link rel="icon" href="/img/favicon.png"> {% set css %}
+    {% include "styles.css" %}
+    {% endset %}
+    <!-- feed it through our cssmin filter to minify -->
+    <style>
+      {{css | cssmin | safe}}</style>
+  </head>
+  <body>
+    <main>
+      {% include 'header.njk' %}
+      {{ content | safe }}
+    </main>
+    <aside>
+      <h2>Categorías</h2>
+      <h3>Libros</h3>
+      <ul>
+        {% for article in collections.libros %}
+          <li>
+            <a href="{{ article.url }}">
+              {{ article.data.title }}
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+      <h3>Películas</h3>
+      <ul>
+        {% for article in collections.peliculas %}
+          <li>
+            <a href="{{ article.url }}">
+              {{ article.data.title }}
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    </aside>
     {% include 'footer.njk' %}
-    <script src="/js/index.js" type="module"></script>
-</body>
+    <!-- capture the JS content as a Nunjucks variable -->
+    {% set js %}
+    {% include "index.js" %}
+    {% endset %}
+    <!-- feed it through our jsmin filter to minify -->
+    <script>
+      {{ js | jsmin | safe }}</script>
+  </body>
 </html>
-

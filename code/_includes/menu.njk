@@ -1,5 +1,10 @@
  <nav class="menu">
-  <li><a href="/acerca">Acerca</a></li>
-  <li><a href="/blog">Blog</a></li>
-  <li><a href="/contacto">Contacto</a></li>
+  {% for item in menu %}
+  <ul>
+      <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+
+  </ul>
+    {% endfor %}
+  {# {{ menu | dump }} #}
+
  </nav>
