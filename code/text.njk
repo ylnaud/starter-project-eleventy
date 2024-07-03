@@ -1,0 +1,23 @@
+---
+layout: base.njk
+title:  Contenido cargado dinámicamente.
+description: description del contenido cargado dinámicamente.
+---
+
+<h1>{{title}}</h1>
+<script type="module" src="/@11ty/is-land/is-land.js"></script>
+<h1>Bienvenido a mi Proyecto con Eleventy</h1>
+<p>Este es un ejemplo de cómo usar
+  <code>@11ty/is-land</code>.</p>
+<is-land on:visible="on:visible">
+  <template shadowroot="open">
+    <style>
+      .dynamic-content {
+        color: blue;
+      }
+    </style>
+    <div class="dynamic-content">
+      Contenido cargado dinámicamente.
+    </div>
+  </template>
+</is-land>
