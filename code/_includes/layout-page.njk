@@ -5,23 +5,23 @@
     charset="UTF-8">
     <!-- Primary Meta Tags -->
     <title>
-      Bienvenido a mi Web
+      {{title}}
     </title>
-    <meta name="title" content="Bienvenido a mi Web"/>
+    <meta name="title" content="{{title}}"/>
     <meta
-    name="description" content="Meta description de la pagina de inicio"/> <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website"/>
-    <meta property="og:url" content="https://ylnaud.github.io/starter-project-eleventy/"/>
-    <meta property="og:title" content="Bienvenido a mi Web"/>
-    <meta property="og:description" content="Meta description de la pagina de inicio"/>
+    name="description" content="{{description}}"/> <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="{{url}}"/>
+    <meta property="og:url" content="{{url}}"/>
+    <meta property="og:title" content="{{title}}"/>
+    <meta property="og:description" content="{{description}}"/>
     <meta
-    property="og:image" content="https://metatags.io/images/meta-tags.png"/> <!-- Twitter -->
+    property="og:image" content="{{image}}"/> <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image"/>
-    <meta property="twitter:url" content="https://ylnaud.github.io/starter-project-eleventy/"/>
-    <meta property="twitter:title" content="Bienvenido a mi Web"/>
-    <meta property="twitter:description" content="Meta description de la pagina de inicio"/>
+    <meta property="twitter:url" content="{{url}}"/>
+    <meta property="twitter:title" content="{{title}}"/>
+    <meta property="twitter:description" content="{{description}}"/>
     <meta
-    property="twitter:image" content="https://metatags.io/images/meta-tags.png"/> <!-- Meta Tags Generated with https://metatags.io -->
+    property="twitter:image" content="{{image}}"/> <!-- Meta Tags Generated with https://metatags.io -->
     <link
     rel="icon" href="/img/favicon.png"> <!-- capture the CSS content as a Nunjucks variable -->
     {% set css %}
