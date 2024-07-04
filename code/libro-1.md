@@ -2,6 +2,8 @@
 layout: layout-page.njk
 title: La Noche del Alma Perdida
 description: Una periodista intrépida y curiosa que no se detiene ante nada para descubrir la verdad. Laura es la líder del grupo y tiene un pasado oscuro
+image: "/img/meta-tags.png"
+url: "https://ylnaud.github.io/starter-project-eleventy/"
 tags: ["blog", "libros"]
 date: "2024-02-22"
 ---

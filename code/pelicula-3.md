@@ -2,6 +2,8 @@
 layout: layout-page.njk
 title: "Caos en la Oficina"
 description: "Una comedia de enredos en el lugar de trabajo que te hará reír sin parar."
+image: "/img/meta-tags.png"
+url: "https://ylnaud.github.io/starter-project-eleventy/"
 tags: ["blog", "peliculas"]
 date: "2024-03-24"
 ---

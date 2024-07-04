@@ -2,6 +2,8 @@
 layout: layout-page.njk
 title: El Susurro del Bosque
 description: En las profundidades de un bosque olvidado, se esconde un secreto oscuro y siniestro. El "Susurro del Bosque" es una presencia malévola
+image: "/img/meta-tags.png"
+url: "https://ylnaud.github.io/starter-project-eleventy/"
 tags: ["blog", "libros"]
 date: "2024-07-24"
 ---

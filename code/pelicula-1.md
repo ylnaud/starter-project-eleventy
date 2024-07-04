@@ -2,6 +2,8 @@
 layout: layout-page.njk
 title: "Risas a Medianoche"
 description: "Una comedia hilarante que te hará reír hasta la medianoche."
+image: "/img/meta-tags.png"
+url: "https://ylnaud.github.io/starter-project-eleventy/"
 tags: ["blog", "peliculas"]
 date: "2024-07-24"
 ---

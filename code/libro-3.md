@@ -2,6 +2,8 @@
 layout: layout-page.njk
 title: El Espejo Maldito
 description: Un espejo antiguo y encantado encuentra su camino hasta la mansión de la familia
+image: "/img/meta-tags.png"
+url: "https://ylnaud.github.io/starter-project-eleventy/"
 tags: ["blog", "libros"]
 date: "2024-07-05"
 ---
